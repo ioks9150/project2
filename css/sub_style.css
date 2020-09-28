@@ -1,0 +1,952 @@
+#main{
+    width: 100%;
+    height: 440px;
+}
+#main.sub1{
+    background-image:url(../images/sub_main1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#main.sub2{
+    background-image:url(../images/sub_main2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#main.sub3{
+    background-image:url(../images/sub_main3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#main .inner{
+    position: relative;
+    height: 100%;
+}
+#main .textbox{
+    position: absolute;
+    top:43%;
+    left:0%;
+}
+#main .textbox>h2{
+    font-size:3.8rem;
+    color:#fff;
+    text-shadow: 0px 0px 15px rgba(4,29,78);
+}
+#main .textbox>p{
+    font-size:2.6rem;
+    color:#fff;
+    text-shadow: 0px 0px 15px rgba(4,29,78);
+/*    text-shadow: 2px 2px 15px #041d4e;*/
+}
+#main .subbtn{
+    width: 100%;
+    height:60px;
+    background-color: #028597;
+    opacity: 0.9;
+    position: absolute;
+    bottom:0;
+}
+.subbtn ul{}
+.subbtn ul:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.subbtn ul li{
+    float: left;
+}
+.subbtn ul li .home{
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    position: relative;
+}
+.subbtn ul li .bgbox{
+    display: block;
+    width: 60px;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.3;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.subbtn ul .home img{
+    vertical-align:middle;
+}
+.subbtn ul li:nth-child(2),.subbtn ul li:nth-child(3){
+    width: 150px;
+    height: 60px;
+    background-color: inherit;
+    color:#fff;
+    font-size: 1.8rem;
+    border:0;
+}
+.subbtn ul li a{
+    display: block;
+    width: 100%;
+    height:60px;
+    font-size: 1.8rem;
+    line-height: 60px;
+    color:#fff;
+    text-align: center;
+}
+.subbtn ul li a img{
+    margin-left: 5%;
+}
+
+
+
+/*--------------------------------내용------------------------------------*/
+
+
+.layout{
+    width:100%;
+}
+.layout .inner{
+    height: 1800px;
+}
+.layout .inner:after{
+    display: inline-block;
+    content: "";
+    clear: both;
+}
+
+/*-----------------------------로컬메뉴---------------------------------*/
+
+.layout .localmenu{
+    float: left;
+    width:25%;
+    height: auto;
+    padding-top:5px;
+}
+.layout .localmenu>li{
+    width: 100%;
+    height: auto;
+}
+.layout .localmenu>li:last-child{
+    border-bottom:0;
+}
+.layout .localmenu>li>a{
+    display: block;
+    width: 95%;
+    height: 52px;
+    font-size: 1.8rem;
+    line-height: 52px;
+    padding-left:5%;
+    border-bottom:1px solid #e2e2e2;
+}
+.layout .localmenu>li>a:hover{
+    background-color: #06ad93;
+    color:#fff;
+    transition: all 0.5s;
+    border-bottom: 1px solid #00806c;
+}
+.layout .localmenu>li:hover .localsubmenu{
+    display: block;
+   transition: all 0.5s;
+}
+.layout .localmenu .localsubmenu{
+    display: none;
+    width: 95%;
+    padding-left:10px;
+}
+.layout .localmenu .localsubmenu>li>a{
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size:1.4rem;
+}
+.layout .localsubmenu>li:first-child>a{
+    padding-top:15px;
+}
+.layout .localsubmenu>li:last-child>a{
+    padding-bottom:15px;
+}
+.layout .localmenu .localsubmenu>li>a>span{
+    display: inline-block;
+    width: 7%;
+    height: 1px;
+    margin-bottom: 5px;
+    margin-right:2%;
+    background-color: inherit;
+}
+.layout .localmenu .localsubmenu>li:hover a>span{
+    transition: all 0.5s;
+    background-color: #06ad93;
+}
+.layout .localmenu>li.open .localsubmenu{
+    display: block;
+}
+.layout .localmenu>li.open>a{
+    background-color: #06ad93;
+    color:#fff;
+    border-bottom: 1px solid #00806c;
+}
+.layout .localmenu>li.open .localsubmenu span.on{
+    background-color: #06ad93;
+}
+
+
+
+
+/*----------------------------------본문-------------------------------*/
+
+
+
+.layout .view{
+    float: right;
+    width: 70%;
+    padding-top:5px;
+}
+
+
+/*----------------------------------sub1---------------------------------*/
+
+
+.layout .view .textbox{
+    width: 100%;
+    position: relative;
+}
+.layout .view .textbox>h3{
+    width: 100%;
+    font-size: 3.2rem;
+    color:#028597;
+    padding-top: 32px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #028597;
+}
+.layout .view .textbox>p{
+    width: 88%;
+    margin-top:25px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 67px;
+}
+.layout .view .textbox .group{
+    position: absolute;
+    top:40px;
+    right: 0;
+    width: 80px;
+}
+.layout .view .textbox .group>a:nth-child(1){
+    margin-right: 20px;
+    display: inline-block;
+}
+
+
+.view .time{
+    width: 100%;
+}
+.view .time>h4{
+    font-size:2rem;
+    margin-bottom: 17px;
+}
+.view .time>ul{
+    width: 100%;
+    height: 225px;
+    border: 1px solid #f3f3f3;
+    box-sizing: border-box;
+}
+.view .time>ul>li{
+    font-size:1.4rem;
+    float:left;
+}
+.view .time>ul>li:nth-child(odd){
+    width:30%;
+    height:55px;
+    background-color: #028597;
+    color:#fff;
+    text-align: center;
+    line-height: 55px;
+    border-bottom: 1px solid #f3f3f3;
+}
+.view .time>ul>li:nth-child(even){
+    width: 68%;
+    padding-left:2%;
+    height: 55px;
+    color:#6c6c6c;
+    text-align: left;
+    line-height:55px;
+    border-bottom: 1px solid #f3f3f3;
+}
+.view .time>ul>li:nth-child(7),.view .time>ul>li:nth-child(8){
+    border-bottom: 0;
+}
+
+.view .tiket{
+    margin-top: 58px;
+}
+.view .tiket>h4{
+    font-size:2rem;
+    margin-bottom: 17px;
+}
+.view .tiket>ul{
+    width: 100%;
+    height: 112.5px;
+    border: 1px solid #f3f3f3;
+    box-sizing: border-box;
+}
+.view .tiket>ul>li{
+    font-size:1.4rem;
+    float:left;
+}
+.view .tiket>ul>li:nth-child(odd){
+    width:30%;
+    height:55px;
+    background-color: #6c6c6c;
+    color:#fff;
+    text-align: center;
+    line-height: 55px;
+    border-bottom: 1px solid #f3f3f3;
+}
+.view .tiket>ul>li:nth-child(even){
+    width: 68%;
+    padding-left:2%;
+    height: 55px;
+    color:#6c6c6c;
+    text-align: left;
+    line-height:55px;
+    border-bottom: 1px solid #f3f3f3;
+}
+.view .tiket>ul>li:nth-child(7),.view .tiket>ul>li:nth-child(8){
+    border-bottom: 0;
+}
+
+
+.view .explanation{
+    margin-top: 50px;
+}
+.view .explanation p{
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+}
+.view .explanation p.point{
+    color:#028597;
+    font-size: 1.5rem;
+    line-height: 3.0rem;
+    font-weight: bold;
+}
+
+/*---------------------------평가조사-------------------------------*/
+.view .question{
+    margin-top: 140px;
+    width: 100%;
+    height: 208px;
+    border:1px solid #6c6c6c;
+/*    box-sizing: border-box;*/
+}
+.view .question .slide{
+    width: 100%;
+    height: 53px;
+    background-color: #f3f3f3;
+    border-bottom:1px solid #6c6c6c;
+    display: none;
+}
+.view .question .slide p{
+    line-height: 53px;
+    float: left;
+    font-size: 1.4rem;
+    margin-left:2%;
+    font-weight: bold;
+}
+.view .question .slide a{
+    display: block;
+    width: 53px;
+    height: 53px;
+    line-height: 53px;
+    float: right;
+    text-align: center;
+}
+.view .question .slide a img{
+    vertical-align: middle;
+    transform: scale(1); transition: all 0.7s;
+}
+.view .question .slide a:hover img{
+    transform: rotate(45deg); transition: all 0.4s
+}
+    
+.view .question>ul{
+    width: 100%;
+    height: 53px;
+    background-color: #f3f3f3;
+    border-bottom: 1px solid #6c6c6c;
+}
+.view .question>ul:after{
+    display: inline-block;
+    content: "";
+    clear: both;
+}
+.view .question>ul li{
+    font-size:1.6rem;
+    float: left;
+    line-height: 53px;
+    padding-left:2%;
+}
+.view .question>ul li:nth-child(1){
+    width:33%;
+    height: 53px;
+    border-right: 1px solid #6c6c6c;
+}
+.view .question>ul li:nth-child(2){
+    width:23%;
+    height: 53px;
+    border-right: 1px solid #6c6c6c;
+}
+.view .question>ul li:nth-child(3){
+    width:37.7%;
+    height: 53px;
+}
+.view .question>ul li span{
+    font-weight: bold;
+    margin-right: 5%;
+}
+
+.view .question .QA{
+    width: 100%;
+    height: 155px;
+}
+.view .QA .title{
+    margin: 23px 0 0 23px;
+    font-size:1.6rem;
+    font-weight: bold;
+}
+.view .QA .group{
+    margin: 13px 0 0 23px;
+    font-size:1.6rem;
+}
+.view .QA .group span{
+    padding-right: 30px;
+    }
+.view .QA .group input{
+    margin-right: 8px;
+}
+.view .QA .text{
+    width: 90%;
+    margin: 25px 0 0 23px;
+    position: relative;
+}
+.view .QA .text input:nth-child(1){
+    width: 87%;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 0;
+    border:1px solid #6c6c6c;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.view .QA .text input:nth-child(2){
+    width: 13%;
+    height: 30px;
+    border-radius: 0;
+    background-color: #6c6c6c;
+    color:#fff;
+    font-weight: bold;
+    border:1px solid #6c6c6c;
+    position: absolute;
+    right: 0;
+    top:0;
+    cursor: pointer;
+}
+
+
+/*--------------------------------sub2---------------------------------*/
+
+.layout2{
+    width:100%;
+}
+.layout2 .inner{
+    height: 1000px;
+}
+
+/*----------------------------sub2본문------------------------*/
+
+
+.view .calender{
+    margin-top: 67px;
+    width: 100%;
+    height: 326px;
+    border: 1px solid #f3f3f3;
+}
+.view .calender .top{
+    width: 100%;
+    height: 108px;
+    border-bottom: 1px solid #f3f3f3;
+    background-color: #6c6c6c;
+}
+.view .calender .top:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.view .calender .tit{
+    width:25%;
+    height: 100%;
+    border-right: 1px solid #f3f3f3;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    float: left;
+    text-align: center;
+    line-height: 108px;
+}
+.view .calender .right{
+    width: 75%;
+    height: 100%;
+    float: right;
+}
+.view .calender .period{
+    width: 100%;
+    height: 67px;
+    font-size: 1.6rem;
+    color:#fff;
+    text-align: center;
+    line-height: 67px;
+    border-bottom: 1px solid #f3f3f3;
+    box-sizing: border-box;
+}
+.view .calender .month{
+    width: 100%;
+    height: 41px;
+}
+.view .calender .month>li{
+    float: left;
+    width: 8.3%;
+    height: 100%;
+    border-right: 1px solid #f3f3f3;
+    font-size: 1.5rem;
+    line-height: 41px;
+    text-align: center;
+    color:#fff;
+    box-sizing: border-box;
+}
+.view .calender .month>li:last-child{
+    border-right:0;
+}
+.view .calender .bottom{
+    width: 100%;
+    height: 218px;
+}
+.view .calender .bottom:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.view .calender .txt{
+    width:25%;
+    height: 100%;
+    border-right: 1px solid #f3f3f3;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    float: left;
+}
+.view .calender .txt>li{
+    width: 100%;
+    height: 72.6px;
+    line-height: 72.6px;
+    border-bottom: 1px solid #f3f3f3;
+    box-sizing: border-box;
+    
+}
+.view .calender .txt>li:last-child{
+    border-bottom: 0;
+}
+.view .calender .txt>li p{
+    margin-left: 3%;
+}
+.view .calender .line{
+    float: left;
+    width: 75%;
+    height: 100%;
+}
+.view .calender .line>ul{
+    width: 100%;
+    height: 72.6px;
+    border-bottom: 1px solid #f3f3f3;
+    box-sizing: border-box;
+}
+.view .calender .line>ul:last-child{
+    border-bottom: 0;
+}
+.view .calender .line>ul>li{
+    float: left;
+    width: 8.3%;
+    height: 72.6px;
+    border-right: 1px solid #f3f3f3;
+    box-sizing: border-box;
+}
+.view .calender .line>ul>li:last-child{
+    border-right: 0;
+}
+.view .calender .line>ul>li .point{
+    width: 100%;
+    height: 10px;
+    margin-top: 18px;
+    background-color: #e34818;
+}
+.view .calender .line>ul>li:last-child .point{
+    width: 106%;
+}
+.view .sub2qustion{
+    margin-top: 120px;
+}
+
+/*--------------------------------sub3---------------------------------*/
+
+.layout3{
+    width:100%;
+}
+.layout3 .inner{
+    height: 1215px;
+}
+
+/*----------------------------sub3본문------------------------*/
+
+.view .boards{
+    margin-top: 67px;
+    width: 100%;
+}
+.view .boards img{
+    width: 100%;
+}
+.view .mobile_boards{
+    display: none;
+}
+
+
+
+
+
+@media (max-width:1279px){
+    #main.sub1{
+        height: 0;
+        padding-top: calc(440/1920 * 100%);
+    }
+    #main .inner{
+        position: unset;
+    }
+    #main .textbox{
+        top:27%;
+        left:5%;
+    }
+    #main .subbtn{
+        height: 40px;
+    }
+    #main .textbox>h2{
+        font-size: 3.0rem;
+    }
+    #main .textbox>p{
+        font-size: 2.0rem;
+    }
+    .subbtn ul li .bgbox{
+        width: 40px;
+    }
+    .subbtn ul li .home{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .subbtn ul li a{
+        height: 40px;
+        line-height: 40px;
+    }
+    .subbtn ul li a{
+        font-size: 1.4rem;
+    }
+    .subbtn ul li:nth-child(2), .subbtn ul li:nth-child(3){
+        height:40px;
+        width: 100px;
+    }
+    .subbtn ul li:nth-child(2) a img, .subbtn ul li:nth-child(3) a img {
+        margin-left: 5%;
+        vertical-align: center;
+        width: 5%;
+    }
+    .layout .inner{
+/*        height: 1600px;*/
+        height: auto;
+    }
+    .layout .localmenu{
+        display: none;
+    }
+    .layout .view{
+        float: none;
+        width: 96%;
+        margin: 0 auto;
+    }
+    .layout .view .textbox>h3{
+        font-size: 2.8rem;
+        padding-bottom: 2%;
+    }
+    .layout .view .textbox>p{
+        font-size: 1.4rem;
+        width:100%;
+    }
+    .layout .view .textbox .group{
+        width: 40px;
+    }
+    .layout .view .textbox .group a:nth-child(2){
+        display: none;
+    }
+    .view .question{
+        height: 53px;
+    }
+    .view .question .slide{
+        display: block;
+/*        box-sizing: border-box;*/
+    }
+    .view .question>ul{
+        display: none;
+    }
+    .view .question>ul li{
+        font-size: 1.4rem;
+    }
+    .view .question .QA{
+        display: none;
+    }
+    .view .QA .title{
+        font-size: 1.4rem;
+    }
+    .view .QA .group{
+        font-size: 1.4rem;
+    }
+    
+    
+    
+    
+    
+/*    ----------------------------sub2-------------------------------- */
+    
+    #main.sub2{
+        height: 0;
+        padding-top: calc(440/1920 * 100%);
+    }
+    
+    .layout2{
+/*        height: 850px;*/
+    }
+    
+    
+    .layout2 .inner{
+/*        height: 800px;*/
+        height: auto;
+    }
+    
+    
+/*-------------------------------sub3---------------------------------    */
+    
+    #main.sub3{
+        height: 0;
+        padding-top: calc(440/1920 * 100%);
+        background-position: 30% center;
+    }
+    
+    .layout3 .inner{
+        height: auto;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+@media (max-width:768px){
+    #main.sub1{
+        height: 80px;
+    }
+    .layout .inner{
+/*        height: 1900px;*/
+    }
+    .layout .view .textbox>h3{
+        font-size: 2.2rem;
+    }
+    .layout .view .textbox .group>a:nth-child(1){
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+    .layout .view .textbox .group>a:nth-child(1) img{
+        width: 80%;
+    }
+    .view .time>ul>li:nth-child(odd){
+        width: 40%;
+    }
+    .view .time>ul>li:nth-child(even){
+        width:58%;
+    }
+    .view .tiket>ul>li:nth-child(odd){
+        width: 40%;
+    }
+    .view .tiket>ul>li:nth-child(even){
+        width: 58%;
+    }
+    .view .time>ul li{
+        font-size: 1.2rem;
+    }
+    .view .tiket>ul li{
+        font-size: 1.2rem;
+    }
+    .view .explanation p.point{
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    .view .explanation p{
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+    
+    
+/*    -------------------------sub 2---------------------------------- */
+    
+    #main.sub2{
+        height: 80px;
+    }
+    .view .calender .tit{
+        font-size: 1.2rem;
+        width: 20%;
+    }
+    .view .calender .period{
+        font-size: 1.2rem;
+    }
+    .view .calender .month>li{
+        font-size: 1.2rem;
+    }
+    .view .calender .txt{
+        font-size: 1.2rem;
+        width: 20%;
+    }
+    .view .calender .right{
+        width: 80%;
+    }
+    .view .calender .line{
+        width: 80%;
+    }
+    .view .calender .txt>li{
+        line-height: 1.3rem;
+    }
+    .view .calender .month>li{
+        font-size:1.1rem;
+    }
+    .view .calender .txt>li p{
+        padding-top: 25px;
+    }
+    
+    
+/*    -------------------------sub 3-----------------------------    */
+    #main.sub3{
+        height: 80px;
+    }
+    .view .boards{
+        display: none;
+    }
+    .view .mobile_boards{
+        display: block;
+        margin: 0 auto;
+        margin-top: 67px;
+        width: 96%;
+    }
+    .view .mobile_boards img{
+        width: 100%;
+    }
+    
+    
+    
+    
+/*    ---------------------------하단 문항지---------------------------    */
+    
+    
+    .view .question>ul li:nth-child(1){
+        width: 73%;
+        box-sizing: border-box;
+    }
+    .view .question>ul li:nth-child(2){
+        border-right: 0;
+        border-bottom: 1px solid #6c6c6c;
+    }
+    .view .question>ul li:nth-child(3){
+        width: 98%;
+        background-color: #f3f3f3;
+        border-right: 1px solid #6c6c6c;
+        border-bottom: 1px solid #6c6c6c;
+        margin-bottom: 10px;
+    }
+    .view .QA .title{
+        margin-left: 10px;
+    }
+    .view .QA .group{
+        margin-left: 10px;
+    }
+    .view .QA .group span{
+        padding-right: 1%;
+    }
+    .view .QA .group input{
+        margin-right: 1%;
+    }
+    .view .QA .text{
+        margin-left: 10px;
+    }
+    .view .QA .text input:nth-child(2){
+        width: 17%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

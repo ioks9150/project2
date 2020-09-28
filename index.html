@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>해녀박물관</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen">
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/scripts.js"></script>
+    <script defer src="js/jquery.flexslider.js"></script><!-- 슬라이딩배너 -->
+</head>
+
+<body>
+
+    <div id="wrap">
+        <header id="header">
+            <div id="headerin">
+                <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="로고"></a></h1>
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="operationguide.html">사전예약</a>
+                            <ul class="sub_menu">
+                                <li><a href="operationguide.html">사전예약</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="operationguide.html">이용·전시</a>
+                            <ul class="sub_menu">
+                                <li><a href="operationguide.html">관람안내</a></li>
+                                <li><a href="operationguide.html">제1전시실</a></li>
+                                <li><a href="operationguide.html">제2전시실</a></li>
+                                <li><a href="operationguide.html">제3전시실</a></li>
+                                <li><a href="operationguide.html">어린이해녀관</a></li>
+                                <li><a href="operationguide.html">소장자료</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="education.html">교육·행사</a>
+                            <ul class="sub_menu">
+                                <li><a href="education.html">교육일정</a></li>
+                                <li><a href="education.html">교육프로그램</a></li>
+                                <li><a href="education.html">신청확인</a></li>
+                                <li><a href="education.html">문화행사</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="newsguide.html">소식·참여</a>
+                            <ul class="sub_menu">
+                                <li><a href="newsguide.html">새소식</a></li>
+                                <li><a href="newsguide.html">보도자료</a></li>
+                                <li><a href="newsguide.html">포토갤러리</a></li>
+                                <li><a href="newsguide.html">영상갤러리</a></li>
+                                <li><a href="newsguide.html">발간자료</a></li>
+                                <li><a href="newsguide.html">자료수집 및 이용</a></li>
+                                <li><a href="newsguide.html">온라인서식</a></li>
+                                <li><a href="newsguide.html">문의게시판</a></li>
+                                <li><a href="newsguide.html">설문조사</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="newsguide.html">박물관소개</a>
+                            <ul class="sub_menu">
+                                <li><a href="newsguide.html">인사말</a></li>
+                                <li><a href="newsguide.html">연혁 및 시설안내</a></li>
+                                <li><a href="newsguide.html">조직도</a></li>
+                                <li><a href="newsguide.html">항일운동</a></li>
+                                <li><a href="newsguide.html">찾아오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="newsguide.html">해녀</a>
+                            <ul class="sub_menu">
+                                <li><a href="newsguide.html">해녀소개</a></li>
+                                <li><a href="newsguide.html">해녀관련통계</a></li>
+                                <li><a href="newsguide.html">해녀관련 정책</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </nav>
+                <div class="top_menu">
+                    <ul class="jeju">
+                        <li><a href="#">제주특별자치도</a></li>
+                        <li><a href="#">도의회</a></li>
+                        <li><a href="#">제주시</a></li>
+                        <li><a href="#">서귀포시</a></li>
+                    </ul>
+                    <ul class="login">
+                        <li><a href="#">로그인</a></li>
+                        <li>
+                            <select>
+                                <option>&nbsp;&nbsp;Language</option>
+                                <option>&nbsp;&nbsp;English</option>
+                                <option>&nbsp;&nbsp;日本語</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search_menu">
+                    <div class="search">
+                        <a href="#"><img src="images/search.png" alt="검색"></a>
+                    </div>
+                    <div class="menu">
+                        <a href="#"><img src="images/menu.png" alt="메뉴"></a>
+                    </div>
+                </div>
+                <div class="menubg">
+                    <p class="text">이용·전시</p>
+                    <div class="img"><img src="images/menubg.jpg" alt="메뉴배경"></div>
+                </div>
+                <div id="menu_mobile">
+                    <div class="menu_mobilein">
+                        <div class="closebtn">
+                            <a href="#">close</a>
+                        </div>
+                        <div class="menu_m_box on">
+                            <ul class="m_list">
+                                <li class="on">
+                                    <a href="#">사전예약</a>
+                                    <ul class="m_list_sub on">
+                                        <li>
+                                            <a href="#">사전예약</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">이용·전시</a>
+                                    <ul class="m_list_sub">
+                                        <li><a href="#">관람안내</a></li>
+                                        <li><a href="#">제1전시실</a></li>
+                                        <li><a href="#">제2전시실</a></li>
+                                        <li><a href="#">제3전시실</a></li>
+                                        <li><a href="#">어린이해녀관</a></li>
+                                        <li><a href="#">소장자료</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">교육·행사</a>
+                                    <ul class="m_list_sub">
+                                        <li><a href="#">교육일정</a></li>
+                                        <li><a href="#">교육프로그램</a></li>
+                                        <li><a href="#">신청확인</a></li>
+                                        <li><a href="#">문화행사</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">소식·참여</a>
+                                    <ul class="m_list_sub">
+                                        <li><a href="#">새소식</a></li>
+                                        <li><a href="#">보도자료</a></li>
+                                        <li><a href="#">포토갤러리</a></li>
+                                        <li><a href="#">영상갤러리</a></li>
+                                        <li><a href="#">발간자료</a></li>
+                                        <li><a href="#">자료수집 및 이용</a></li>
+                                        <li><a href="#">온라인서식</a></li>
+                                        <li><a href="#">문의게시판</a></li>
+                                        <li><a href="#">설문조사</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">박물관소개</a>
+                                    <ul class="m_list_sub">
+                                        <li><a href="#">인사말</a></li>
+                                        <li><a href="#">연혁 및 시설안내</a></li>
+                                        <li><a href="#">조직도</a></li>
+                                        <li><a href="#">제주해녀항일운동기념탑</a></li>
+                                        <li><a href="#">찾아오시는 길</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">해녀</a>
+                                    <ul class="m_list_sub">
+                                        <li><a href="#">해녀소개</a></li>
+                                        <li><a href="#">해녀관련 통계</a></li>
+                                        <li><a href="#">제주해녀 관련 정책</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menubg">
+                        <p class="text">이용·전시</p>
+                        <div class="img"><img src="images/menubg.jpg" alt="메뉴배경"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="main"  data-anchor="one"> <!--flexslider-->
+           <div class="flexslider">
+            <ul class="slides">
+                <li>
+                    <img src="images/mainimg980.jpg">
+                </li>
+                <li>
+                    <img src="images/mainimg2980.jpg">
+                </li>
+                <li>
+                    <img src="images/mainimg980.jpg">
+                </li>
+                <li>
+                    <img src="images/mainimg2980.jpg">
+                </li>
+            </ul>
+            <!--<div class="flex-direction-nav">
+                <ul class="flex-direction-nav">
+                    <li class="flex-nav-prev">
+                        <a class="flex-prev" href="#">
+                            ::before
+                            "Previous"
+                        </a>
+                    </li>
+
+                    <li class="flex-nav-next">
+                        <a class="flex-prev" href="#">
+                            ::after
+                            "Next"
+                        </a>
+                    </li>
+                </ul>
+            </div>-->
+        </div>
+          <div class="inner">
+                <a href="#" class="mainbtn">자세히보기</a>
+                <ul class="listbtn">
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+                <div class="mouse">
+                    <img src="images/mouse.png" alt="마우스">
+                </div>
+            </div>
+           
+           <!--
+            <h1 class="hidden">메인이미지</h1>
+            <ul class="slidelist">
+               <li class="slide">
+                   <img src="images/mainimg980.jpg" alt="이미지1">
+               </li>
+               <li class="slide">
+                   <img src="images/mainimg980.jpg" alt="이미지2">
+               </li>
+               <li class="slide">
+                   <img src="images/mainimg980.jpg" alt="이미지3">
+               </li>
+               <li class="slide">
+                   <img src="images/mainimg980.jpg" alt="이미지4">
+               </li>
+           </ul>
+            <div class="inner">
+                <a href="#" class="mainbtn">자세히보기</a>
+                <ul class="listbtn">
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+                <div class="mouse">
+                    <img src="images/mouse.png" alt="마우스">
+                </div>
+            </div>
+            
+            -->
+        </section>
+        <main id="contents">
+            <section class="gallery" id="sec01">
+                <h1 class="hidden">전시실안내</h1>
+                <div class="inner">
+                    <div class="textbox">
+                        <h2 class="tit">GALLERY <span class="bold">전시실안내</span>
+                        </h2>
+                    </div>
+                    <ul class="list">
+                        <li>
+                            <a href="operationguide.html" class="box">
+                                <div class="text">
+                                    <span class="number">1/3</span>
+                                    <h3>제1전시실</h3>
+                                    <h4>해녀의 삶</h4>
+                                    <p>자세히보기 <img src="images/arrow.png" alt="화살표"></p>
+                                    <i class="listhidden"><img src="images/more2.png" alt="화살표"></i>
+                                </div>
+                                <div class="img">
+                                    <img src="images/con1_1.jpg" alt="전시실1">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="prev"><img src="images/prev.jpg" alt="이전버튼"></a>
+                    <a href="#" class="next"><img src="images/next.jpg" alt="다음버튼"></a>
+                </div>
+            </section>
+            <section class="information" id="sec02">
+                <h1 class="hidden">관람및안내</h1>
+                <div class="inner">
+                    <div class="textbox">
+                        <h2 class="tit">INFORMATION <span class="bold">관람 및 안내</span>
+                        </h2>
+                    </div>
+                    <div class="infomenu">
+                        <div class="left">
+                            <a href="#">
+                                <i><img src="images/con3_icon_1.png" alt="아이콘"></i>
+                                <h4>박물관 관람안내</h4>
+                                <p>안내확인하시고 편안한 관람바랍니다.</p>
+                                <ul>
+                                    <li><span>관람시간 | </span>09:00~17:00</li>
+                                    <li><span>매표시간 | </span>09:00~16:00</li>
+                                    <li><span>부분휴관 | </span>어린이해녀관, 영상실</li>
+                                    <li><span>휴관일 | </span>1월1일, 설날, 추석, 매주 월요일 휴관</li>
+                                </ul>
+                                <span class="arrow"><img src="images/more.png" alt="더보기"></span>
+                            </a>
+                        </div>
+                        <div class="right">
+                            <ul class="top">
+                                <li><a href="#">
+                                        <i><img src="images/con3_icon_2.png" alt="아이콘"></i>
+                                        <p>사전예약</p>
+                                    </a>
+                                </li>
+                                <li><a href="operationguide.html">
+                                        <i><img src="images/con3_icon_3.png" alt="아이콘"></i>
+                                        <p>관람안내</p>
+                                    </a>
+                                </li>
+                                <li><a href="education.html">
+                                        <i><img src="images/con3_icon_4.png" alt="아이콘"></i>
+                                        <p>교육행사</p>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <i><img src="images/con3_icon_5.png" alt="아이콘"></i>
+                                        <p>어린이해녀관</p>
+                                    </a>
+                                </li>
+                                <li><a href="#">
+                                        <i><img src="images/con3_icon_6.png" alt="아이콘"></i>
+                                        <p>해녀소개</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="bottom">
+                                <li>
+                                    <a href="#">
+                                        <i><img src="images/con3_icon_7.png" alt="아이콘"></i>
+                                        <h4>문의하기</h4>
+                                        <p>상담/문의 및 자주하는 질문을 안내합니다.</p>
+                                        <span class="arrow"><img src="images/more.png" alt="더보기"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i><img src="images/con3_icon_8.png" alt="아이콘"></i>
+                                        <h4>소장자료</h4>
+                                        <p>해녀박물관에서 소장하고있는 소장품을 검색합니다.</p>
+                                        <span class="arrow"><img src="images/more.png" alt="더보기"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i><img src="images/con3_icon_9.png" alt="아이콘"></i>
+                                        <h4>찾아오시는 길</h4>
+                                        <p>해녀박물관으로 오시는 길을 안내합니다.</p>
+                                        <span class="arrow"><img src="images/more.png" alt="더보기"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="news" id="sec03">
+                <h1 class="hidden">뉴스및소식</h1>
+                <div class="inner">
+                    <div class="textbox">
+                        <h2 class="tit">NEW &#38; NOTICE <span class="bold">소식안내</span>
+                        </h2>
+                        <a href="newsguide.html" class="more"><img src="images/plus_gray.png" alt="더보기"></a>
+                    </div>
+                    <div class="listbox">
+                        <div class="new">NEW</div>
+                        <ul>
+                            <li><a href="#">
+                                    <img src="images/con3_news1.jpg" alt="뉴스이미지">
+                                    <div class="newsbox">
+                                        <p>2020-08-24</p>
+                                        <h4>태풍'바비'내습에 따른 휴관 공지 (휴관일:8월 26일)</h4>
+                                        <span class="arrow"><img src="images/more.png" alt="더보기"></span>
+                                    </div>
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="images/con3_new2.jpg" alt="뉴스이미지">
+                                    <div class="newsbox">
+                                        <p>2020-08-12</p>
+                                        <h4>양종훈 ‘제주해녀’ 사진 특별전</h4>
+                                        <span class="arrow"><img src="images/more.png" alt="더보기"></span>
+                                    </div>
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="images/con3_new3.jpg" alt="뉴스이미지">
+                                    <div class="newsbox">
+                                        <p>2020-07-06</p>
+                                        <h4>해녀박물관 사전예약 방법</h4>
+                                        <span class="arrow"><img src="images/more.png" alt="더보기"></span>
+                                    </div>
+                                </a></li>
+                        </ul>
+                        <ul class="listbtn">
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
+                    <div class="subbox">
+                        <div class="databox">
+                            <div class="notice">
+                                <h4>보도자료</h4>
+                                <div class="plus"><a href="#"><img src="images/plus_gray.png" alt="더보기"></a></div>
+                                <ul>
+                                    <li><a href="#">해녀박물관, 6월 18일부터 제한적 시범개방</a><span>2020-06-15</span></li>
+                                    <li><a href="#">찾아가는 어린이 해녀문화 교육 운영</a><span>2020-03-13</span></li>
+                                    <li><a href="#">지난해 말 기준 도내 해녀 수 3,820명으로 집계</a><span>2020-02-14</span></li>
+                                    <li><a href="#">해녀박물관 제한적 시범개방 알림</a><span>2020-01-15</span></li>
+                                </ul>
+                            </div>
+
+                            <div class="data">
+                                <h4>발간자료<span> 제주해녀의 자취를 따라서</span></h4>
+                                <div class="plus"><a href="#"><img src="images/plus_gray.png" alt="더보기"></a></div>
+                                <a href="#" class="book"><img src="images/con3_book.jpg" alt="책"></a>
+                            </div>
+                            <div class="download">
+                                <h4>온라인서식</h4>
+                                <div class="plus"><a href="#"><img src="images/plus_gray.png" alt="더보기"></a></div>
+                                <p>제주해녀박물관과 관련 된<br>다양한 서식을 안내해드리고 있습니다.</p>
+                                <a href="#" class="downbtn">다운로드</a>
+                                <i><img src="images/con3_icon_paper.png" alt="자료이미지"></i>
+                            </div>
+                        </div>
+
+                        <div class="databox2">
+                            <div class="video">
+                                <h4>제주해녀 홍보영상</h4>
+                                <div class="plus"><a href="#"><img src="images/plus_white.png" alt="더보기"></a></div>
+                                <a href="#" class="box">
+                                    <img src="images/con3_1.jpg" alt="이미지">
+                                </a>
+                            </div>
+                            <div class="photo">
+                                <h4>포토 갤러리</h4>
+                                <div class="plus"><a href="#"><img src="images/plus_white.png" alt="더보기"></a></div>
+                                <a href="#" class="box">
+                                    <img src="images/con3_2.jpg" alt="이미지">
+                                </a>
+                            </div>
+                            <div class="vr">
+                                <div class="plus"><a href="#"><img src="images/plus_white.png" alt="더보기"></a></div>
+                                <ul class="box">
+                                    <li><a href="#"><img src="images/con3_3.jpg" alt="이미지"></a></li>
+                                </ul>
+                                <ul class="vr_btn">
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#" class="play"><img src="images/con3_icon_play.png" alt="재생"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="haenyeo" id="sec04">
+                <h1 class="hidden">해녀</h1>
+                <div class="inner">
+                    <div class="textbox">
+                        <h2>제주해녀,<br><span>그녀들의 삶 속으로</span></h2>
+                        <p class="pc">바다에서 물질을 하는 그녀들은<br> 전국으로 멀리 발길을 닿았습니다.<br>‘살아있는 어업문화유산’으로 등록 된<br> 제주해녀에 대해 좀 더 알아보겠습니다.</p>
+                        <p class="mobile">바다에서 물질을 하는 그녀들은 전국으로 멀리 발길을 닿았습니다.</p>
+                    </div>
+                    <div class="listbox">
+                        <ul>
+                            <li>
+                                <h3>해녀소개</h3>
+                                <div>
+                                    <img src="images/dot.png" alt="점선">
+                                </div>
+                                <p>삼국시대 이전부터<br>시작된 그녀들의 삶</p>
+                                <a href="#" class="btn">
+                                    더 알아보기<img src="images/more2.png" alt="더보기">
+                                </a>
+                            </li>
+                            <li>
+                                <h3>해녀관련통계</h3>
+                                <div>
+                                    <img src="images/dot.png" alt="점선">
+                                </div>
+                                <p>통계로 알아보는<br>해녀의 발자취</p>
+                                <a href="#" class="btn">
+                                    더 알아보기<img src="images/more2.png" alt="더보기">
+                                </a>
+                            </li>
+                            <li>
+                                <h3>제주해녀관련정책</h3>
+                                <div>
+                                    <img src="images/dot.png" alt="점선">
+                                </div>
+                                <p>해녀의 문화와<br>가치를 위한 변화들</p>
+                                <a href="#" class="btn">
+                                    더 알아보기<img src="images/more2.png" alt="더보기">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="mobilelistbox">
+                        <li><a href="#">해녀소개</a></li>
+                        <li><a href="#">해녀관련통계</a></li>
+                        <li><a href="#">제주해녀관련정책</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="site">
+                <h1 class="hidden">연관사이트</h1>
+                <div class="inner">
+                    <div class="btn">
+                        <div class="prev">
+                            <a href="#"><img src="images/prev2.png" alt="왼쪽버튼"></a>
+                        </div>
+                        <div class="next">
+                            <a href="#"><img src="images/next2.png" alt="오른쪽버튼"></a>
+                        </div>
+                    </div>
+                    <ul class="sitelist">
+                        <li><a href="#"><img src="images/con5_1.png" alt="사이트1"></a></li>
+                        <li><a href="#"><img src="images/con5_2.png" alt="사이트2"></a></li>
+                        <li><a href="#"><img src="images/con5_3.png" alt="사이트3"></a></li>
+                        <li><a href="#"><img src="images/con5_4.png" alt="사이트4"></a></li>
+                        <li><a href="#"><img src="images/con5_5.png" alt="사이트5"></a></li>
+                    </ul>
+                </div>
+            </section>
+            <ul id="section_nav" class="sec0">
+                <li>
+                    <a href="#main" class="active" scroll-data="sec00">
+                        <span>HOME</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#sec01" scroll-data="sec01">
+                        <span>전시관안내</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#sec02" scroll-data="sec02">
+                        <span>관람 및 예약</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#sec03" scroll-data="sec03">
+                        <span>소식안내</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#sec04" scroll-data="sec04">
+                        <span>제주해녀</span>
+                    </a>
+                </li>
+            </ul>
+        </main>
+        <footer id="footer">
+            <div class="footer_t">
+                <div class="inner">
+                    <ul>
+                        <li><a href="#">찾아오시는 길</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_b">
+                <div class="inner">
+                    <h2 class="f_logo"><a href="index.html"><img src="images/logo_f.png" alt="로고"></a></h2>
+                    <div class="f_menu">
+                        <ul class="sns">
+                            <li><a href="#"><img src="images/facebook.png" alt="페이스북"></a></li>
+                            <li><a href="#"><img src="images/youtube.png" alt="유튜브"></a></li>
+                            <li><a href="#"><img src="images/google.png" alt="구글"></a></li>
+                        </ul>
+                        <select>
+                            <option>&nbsp;&nbsp;어촌계마을</option>
+                            <option>&nbsp;&nbsp;하도어촌계마을</option>
+                            <option>&nbsp;&nbsp;사계어촌계마을 체험</option>
+                        </select>
+                    </div>
+                    <address>
+                        (63362) 제주특별자치도 제주시 구좌읍 해녀박물관길 26 Tel (064)782-9898, 710-7771~5 Fax 710-7779
+                        Copyright ⓒ HAENYEO MUSEUM. All rights reserved.
+                    </address>
+                </div>
+            </div>
+            <a href="index.html" class="topbtn"><img src="images/top_btn.png" alt="위로가기"></a>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
