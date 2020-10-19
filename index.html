@@ -7,17 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+<!--    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">-->
+    
+    
     <script src="js/jquery-1.12.3.js"></script>
+    <script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
     <script src="js/scripts.js"></script>
-    <script defer src="js/jquery.flexslider.js"></script><!-- 슬라이딩배너 -->
+    <!-- <script defer src="js/jquery.flexslider.js"></script>슬라이딩배너 -->
+
+
 </head>
 
 <body>
 
     <div id="wrap">
-        <header id="header">
+        <header id="header" class="on">
             <div id="headerin">
-                <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="로고"></a></h1>
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="로고"></a>
+                </h1>
                 <nav class="gnb">
                     <ul>
                         <li><a href="operationguide.html">사전예약</a>
@@ -108,7 +119,7 @@
                 <div id="menu_mobile">
                     <div class="menu_mobilein">
                         <div class="closebtn">
-                            <a href="#">close</a>
+                            <a href="#"></a>
                         </div>
                         <div class="menu_m_box on">
                             <ul class="m_list">
@@ -170,92 +181,53 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="menubg">
-                        <p class="text">이용·전시</p>
-                        <div class="img"><img src="images/menubg.jpg" alt="메뉴배경"></div>
-                    </div>
                 </div>
             </div>
         </header>
-        <section id="main"  data-anchor="one"> <!--flexslider-->
-           <div class="flexslider">
-            <ul class="slides">
-                <li>
-                    <img src="images/mainimg980.jpg">
-                </li>
-                <li>
-                    <img src="images/mainimg2980.jpg">
-                </li>
-                <li>
-                    <img src="images/mainimg980.jpg">
-                </li>
-                <li>
-                    <img src="images/mainimg2980.jpg">
-                </li>
-            </ul>
-            <!--<div class="flex-direction-nav">
-                <ul class="flex-direction-nav">
-                    <li class="flex-nav-prev">
-                        <a class="flex-prev" href="#">
-                            ::before
-                            "Previous"
-                        </a>
-                    </li>
-
-                    <li class="flex-nav-next">
-                        <a class="flex-prev" href="#">
-                            ::after
-                            "Next"
-                        </a>
-                    </li>
-                </ul>
-            </div>-->
-        </div>
-          <div class="inner">
-                <a href="#" class="mainbtn">자세히보기</a>
-                <ul class="listbtn">
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                </ul>
-                <div class="mouse">
-                    <img src="images/mouse.png" alt="마우스">
-                </div>
-            </div>
-           
-           <!--
-            <h1 class="hidden">메인이미지</h1>
-            <ul class="slidelist">
-               <li class="slide">
-                   <img src="images/mainimg980.jpg" alt="이미지1">
-               </li>
-               <li class="slide">
-                   <img src="images/mainimg980.jpg" alt="이미지2">
-               </li>
-               <li class="slide">
-                   <img src="images/mainimg980.jpg" alt="이미지3">
-               </li>
-               <li class="slide">
-                   <img src="images/mainimg980.jpg" alt="이미지4">
-               </li>
-           </ul>
-            <div class="inner">
-                <a href="#" class="mainbtn">자세히보기</a>
-                <ul class="listbtn">
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                </ul>
-                <div class="mouse">
-                    <img src="images/mouse.png" alt="마우스">
-                </div>
-            </div>
-            
-            -->
-        </section>
+        
+        
+        
         <main id="contents">
+           <section id="main sec00" class="">
+                <div class="mainIn">
+                    <div class="mainbox">
+                        <div class="slider1">
+                            <img src="images/main980.jpg" alt="사진">
+                            <div class="sliderbox_text">
+                                <h3>제주해녀박물관</h3>
+                                <h4>2020 전시관람 및 휴관일 안내</h4>
+                                <p>관람객들의 편의를 위한<br>해녀박물관의 휴관일을 알려드립니다.</p>
+                            </div>
+                       </div>
+                        <div class="slider2">
+                            <img src="images/main2980.jpg" alt="사진">
+                            <div class="sliderbox_text">
+                                <h3>한국해녀를 말하다</h3>
+                                <h4>2017 제주출항해녀 발자취 기록</h4>
+                                <p>바깥물질 떠난 해녀<br>동아시아 해양문화에 영향을 끼치다</p>
+                            </div>
+                       </div>
+                    </div><!--row4_box--> 
+                    <a href="operationguide.html" class="mainmore">
+                            자세히보기
+                        </a>
+                    <div class="pager">
+                        <a href="#" class="pager_1" data-slide-index="0">
+                            <span class="bar">
+                                <span class="bk">
+                                </span>
+                            </span>
+                    
+                        <a href="#" class="pager_2" data-slide-index="1">
+                            <span class="bar">
+                                <span class="bk">
+                                </span>
+                            </span>
+                        </a>
+                        </a>
+                    </div>
+                </div>
+            </section>
             <section class="gallery" id="sec01">
                 <h1 class="hidden">전시실안내</h1>
                 <div class="inner">
@@ -263,8 +235,9 @@
                         <h2 class="tit">GALLERY <span class="bold">전시실안내</span>
                         </h2>
                     </div>
-                    <ul class="list">
-                        <li>
+
+                    <div class="list lazy slider" data-sizes="50vw">
+                        <div>
                             <a href="operationguide.html" class="box">
                                 <div class="text">
                                     <span class="number">1/3</span>
@@ -277,10 +250,41 @@
                                     <img src="images/con1_1.jpg" alt="전시실1">
                                 </div>
                             </a>
-                        </li>
-                    </ul>
-                    <a href="#" class="prev"><img src="images/prev.jpg" alt="이전버튼"></a>
-                    <a href="#" class="next"><img src="images/next.jpg" alt="다음버튼"></a>
+                        </div>
+                        <div>
+                            <a href="operationguide.html" class="box">
+                                <div class="text">
+                                    <span class="number">2/3</span>
+                                    <h3>제2전시실</h3>
+                                    <h4>해녀의 삶</h4>
+                                    <p>자세히보기 <img src="images/arrow.png" alt="화살표"></p>
+                                    <i class="listhidden"><img src="images/more2.png" alt="화살표"></i>
+                                </div>
+                                <div class="img">
+                                    <img src="images/con1_2.jpg" alt="전시실2">
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="operationguide.html" class="box">
+                                <div class="text">
+                                    <span class="number">3/3</span>
+                                    <h3>제3전시실</h3>
+                                    <h4>해녀의 삶</h4>
+                                    <p>자세히보기 <img src="images/arrow.png" alt="화살표"></p>
+                                    <i class="listhidden"><img src="images/more2.png" alt="화살표"></i>
+                                </div>
+                                <div class="img">
+                                    <img src="images/con1_3.jpg" alt="전시실3">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="da-arrows">
+                        <a href="slick-prev" class="prev slick-arrow"><img src="images/prev.jpg" alt="이전버튼"></a>
+                        <a href="#" class="next slick-arrow"><img src="images/next.jpg" alt="다음버튼"></a>
+                    </div>
                 </div>
             </section>
             <section class="information" id="sec02">
@@ -307,27 +311,27 @@
                         </div>
                         <div class="right">
                             <ul class="top">
-                                <li><a href="#">
+                                <li id="r1"><a href="#">
                                         <i><img src="images/con3_icon_2.png" alt="아이콘"></i>
                                         <p>사전예약</p>
                                     </a>
                                 </li>
-                                <li><a href="operationguide.html">
+                                <li id="r2"><a href="operationguide.html">
                                         <i><img src="images/con3_icon_3.png" alt="아이콘"></i>
                                         <p>관람안내</p>
                                     </a>
                                 </li>
-                                <li><a href="education.html">
+                                <li id="r3"><a href="education.html">
                                         <i><img src="images/con3_icon_4.png" alt="아이콘"></i>
                                         <p>교육행사</p>
                                     </a>
                                 </li>
-                                <li><a href="#">
+                                <li id="r4"><a href="#">
                                         <i><img src="images/con3_icon_5.png" alt="아이콘"></i>
                                         <p>어린이해녀관</p>
                                     </a>
                                 </li>
-                                <li><a href="#">
+                                <li id="r5"><a href="#">
                                         <i><img src="images/con3_icon_6.png" alt="아이콘"></i>
                                         <p>해녀소개</p>
                                     </a>
@@ -373,7 +377,7 @@
                     </div>
                     <div class="listbox">
                         <div class="new">NEW</div>
-                        <ul>
+                        <ul class="list">
                             <li><a href="#">
                                     <img src="images/con3_news1.jpg" alt="뉴스이미지">
                                     <div class="newsbox">
@@ -398,11 +402,15 @@
                                         <span class="arrow"><img src="images/more.png" alt="더보기"></span>
                                     </div>
                                 </a></li>
+
                         </ul>
+
+                        <!--
                         <ul class="listbtn">
                             <li><a href="#"></a></li>
                             <li><a href="#"></a></li>
                         </ul>
+-->
                     </div>
                     <div class="subbox">
                         <div class="databox">
@@ -512,29 +520,46 @@
                     </ul>
                 </div>
             </section>
+
+
+
+
+
             <section class="site">
                 <h1 class="hidden">연관사이트</h1>
                 <div class="inner">
                     <div class="btn">
-                        <div class="prev">
-                            <a href="#"><img src="images/prev2.png" alt="왼쪽버튼"></a>
-                        </div>
-                        <div class="next">
-                            <a href="#"><img src="images/next2.png" alt="오른쪽버튼"></a>
+                        <div id="navbtns" class="clearfix">
+                            <div class="prev previous">
+                                <a href="#"><img src="images/prev2.png" alt="왼쪽버튼"></a>
+                            </div>
+                            <div class="next">
+                                <a href="#"><img src="images/next2.png" alt="오른쪽버튼"></a>
+                            </div>
                         </div>
                     </div>
-                    <ul class="sitelist">
-                        <li><a href="#"><img src="images/con5_1.png" alt="사이트1"></a></li>
-                        <li><a href="#"><img src="images/con5_2.png" alt="사이트2"></a></li>
-                        <li><a href="#"><img src="images/con5_3.png" alt="사이트3"></a></li>
-                        <li><a href="#"><img src="images/con5_4.png" alt="사이트4"></a></li>
-                        <li><a href="#"><img src="images/con5_5.png" alt="사이트5"></a></li>
-                    </ul>
+
+                    <div class="crsl-items" data-navigation="navbtns">
+                        <ul class="sitelist crsl-wrap">
+                            <li class="crsl-item"><a href="#"><img src="images/con5_1.png" alt="사이트1"></a></li>
+                            <li class="crsl-item"><a href="#"><img src="images/con5_2.png" alt="사이트2"></a></li>
+                            <li class="crsl-item"><a href="#"><img src="images/con5_3.png" alt="사이트3"></a></li>
+                            <li class="crsl-item"><a href="#"><img src="images/con5_4.png" alt="사이트4"></a></li>
+                            <li class="crsl-item"><a href="#"><img src="images/con5_5.png" alt="사이트5"></a></li>
+                            <li class="crsl-item"><a href="#"><img src="images/con5_1.png" alt="사이트1"></a></li>
+                            <li class="crsl-item"><a href="#"><img src="images/con5_2.png" alt="사이트2"></a></li>
+                        </ul>
+                    </div>
                 </div>
             </section>
-            <ul id="section_nav" class="sec0">
+
+
+
+
+
+            <ul id="section_nav">
                 <li>
-                    <a href="#main" class="active" scroll-data="sec00">
+                    <a href="#sec00" scroll-data="sec00" class="active">
                         <span>HOME</span>
                     </a>
                 </li>

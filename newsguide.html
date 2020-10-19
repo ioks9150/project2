@@ -7,93 +7,174 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/sub_style.css">
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/jquery.cslider.js"></script>
 </head>
 
 <body>
     <div id="wrap">
 
         <header id="header">
-            <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="로고"></a></h1>
-            <nav class="gnb">
-                <ul>
-                    <li><a href="operationguide.html">사전예약</a>
-                        <ul class="sub_menu">
-                            <li><a href="operationguide.html">사전예약</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="operationguide.html">이용·전시</a>
-                        <ul class="sub_menu">
-                            <li><a href="operationguide.html">관람안내</a></li>
-                            <li><a href="operationguide.html">제1전시실</a></li>
-                            <li><a href="operationguide.html">제2전시실</a></li>
-                            <li><a href="operationguide.html">제3전시실</a></li>
-                            <li><a href="operationguide.html">어린이해녀관</a></li>
-                            <li><a href="operationguide.html">소장자료</a></li>
-                        </ul></li>
-                    <li><a href="education.html">교육·행사</a>
-                        <ul class="sub_menu">
-                            <li><a href="education.html">교육일정</a></li>
-                            <li><a href="education.html">교육프로그램</a></li>
-                            <li><a href="education.html">신청확인</a></li>
-                            <li><a href="education.html">문화행사</a></li>
-                        </ul></li>
-                    <li><a href="newsguide.html">소식·참여</a>
-                        <ul class="sub_menu">
-                            <li><a href="newsguide.html">새소식</a></li>
-                            <li><a href="newsguide.html">보도자료</a></li>
-                            <li><a href="newsguide.html">포토갤러리</a></li>
-                            <li><a href="newsguide.html">영상갤러리</a></li>
-                            <li><a href="newsguide.html">발간자료</a></li>
-                            <li><a href="newsguide.html">자료수집 및 이용</a></li>
-                            <li><a href="newsguide.html">온라인서식</a></li>
-                            <li><a href="newsguide.html">문의게시판</a></li>
-                            <li><a href="newsguide.html">설문조사</a></li>
-                        </ul></li>
-                    <li><a href="newsguide.html">박물관소개</a>
-                        <ul class="sub_menu">
-                            <li><a href="newsguide.html">인사말</a></li>
-                            <li><a href="newsguide.html">연혁 및 시설안내</a></li>
-                            <li><a href="newsguide.html">조직도</a></li>
-                            <li><a href="newsguide.html">항일운동</a></li>
-                            <li><a href="newsguide.html">찾아오시는 길</a></li>
-                        </ul></li>
-                    <li><a href="newsguide.html">해녀</a>
-                        <ul class="sub_menu">
-                            <li><a href="newsguide.html">해녀소개</a></li>
-                            <li><a href="newsguide.html">해녀관련통계</a></li>
-                            <li><a href="newsguide.html">해녀관련 정책</a></li>
-                        </ul></li>
-                </ul>
-            </nav>
-            <div class="top_menu">
-                <ul class="jeju">
-                    <li><a href="#">제주특별자치도</a></li>
-                    <li><a href="#">도의회</a></li>
-                    <li><a href="#">제주시</a></li>
-                    <li><a href="#">서귀포시</a></li>
-                </ul>
-                <ul class="login">
-                    <li><a href="#">로그인</a></li>
-                    <li>
-                        <select>
-                            <option>&nbsp;&nbsp;Language</option>
-                            <option>&nbsp;&nbsp;English</option>
-                            <option>&nbsp;&nbsp;日本語</option>
-                        </select>
-                    </li>
-                </ul>
-            </div>
-            <div class="search_menu">
-                <div class="search">
-                    <a href="#"><img src="images/search.png" alt="검색"></a>
+            <div id="headerin">
+                <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="로고"></a></h1>
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="operationguide.html">사전예약</a>
+                            <ul class="sub_menu">
+                                <li><a href="operationguide.html">사전예약</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="operationguide.html">이용·전시</a>
+                            <ul class="sub_menu">
+                                <li><a href="operationguide.html">관람안내</a></li>
+                                <li><a href="operationguide.html">제1전시실</a></li>
+                                <li><a href="operationguide.html">제2전시실</a></li>
+                                <li><a href="operationguide.html">제3전시실</a></li>
+                                <li><a href="operationguide.html">어린이해녀관</a></li>
+                                <li><a href="operationguide.html">소장자료</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="education.html">교육·행사</a>
+                            <ul class="sub_menu">
+                                <li><a href="education.html">교육일정</a></li>
+                                <li><a href="education.html">교육프로그램</a></li>
+                                <li><a href="education.html">신청확인</a></li>
+                                <li><a href="education.html">문화행사</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="newsguide.html">소식·참여</a>
+                            <ul class="sub_menu">
+                                <li><a href="newsguide.html">새소식</a></li>
+                                <li><a href="newsguide.html">보도자료</a></li>
+                                <li><a href="newsguide.html">포토갤러리</a></li>
+                                <li><a href="newsguide.html">영상갤러리</a></li>
+                                <li><a href="newsguide.html">발간자료</a></li>
+                                <li><a href="newsguide.html">자료수집 및 이용</a></li>
+                                <li><a href="newsguide.html">온라인서식</a></li>
+                                <li><a href="newsguide.html">문의게시판</a></li>
+                                <li><a href="newsguide.html">설문조사</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="newsguide.html">박물관소개</a>
+                            <ul class="sub_menu">
+                                <li><a href="newsguide.html">인사말</a></li>
+                                <li><a href="newsguide.html">연혁 및 시설안내</a></li>
+                                <li><a href="newsguide.html">조직도</a></li>
+                                <li><a href="newsguide.html">항일운동</a></li>
+                                <li><a href="newsguide.html">찾아오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="newsguide.html">해녀</a>
+                            <ul class="sub_menu">
+                                <li><a href="newsguide.html">해녀소개</a></li>
+                                <li><a href="newsguide.html">해녀관련통계</a></li>
+                                <li><a href="newsguide.html">해녀관련 정책</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </nav>
+                <div class="top_menu">
+                    <ul class="jeju">
+                        <li><a href="#">제주특별자치도</a></li>
+                        <li><a href="#">도의회</a></li>
+                        <li><a href="#">제주시</a></li>
+                        <li><a href="#">서귀포시</a></li>
+                    </ul>
+                    <ul class="login">
+                        <li><a href="#">로그인</a></li>
+                        <li>
+                            <select>
+                                <option>&nbsp;&nbsp;Language</option>
+                                <option>&nbsp;&nbsp;English</option>
+                                <option>&nbsp;&nbsp;日本語</option>
+                            </select>
+                        </li>
+                    </ul>
                 </div>
-                <div class="menu">
-                    <a href="#"><img src="images/menu.png" alt="메뉴"></a>
+                <div class="search_menu">
+                    <div class="search">
+                        <a href="#"><img src="images/search.png" alt="검색"></a>
+                    </div>
+                    <div class="menu">
+                        <a href="#"><img src="images/menu.png" alt="메뉴"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="menubg">
-                <p class="text">이용·전시</p>
-                <div class="img"><img src="images/menubg.jpg" alt="메뉴배경"></div>
+                <div class="menubg">
+                    <p class="text">이용·전시</p>
+                    <div class="img"><img src="images/menubg.jpg" alt="메뉴배경"></div>
+                </div>
+                <div id="menu_mobile">
+                    <div class="menu_mobilein">
+                        <div class="closebtn">
+                            <a href="#"></a>
+                        </div>
+                        <div class="menu_m_box on">
+                            <ul class="m_list">
+                                <li class="on">
+                                    <a href="#">사전예약</a>
+                                    <ul class="m_list_sub on">
+                                        <li>
+                                            <a href="#">사전예약</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">이용·전시</a>
+                                    <ul class="m_list_sub">
+                                        <li><a href="operationguide.html">관람안내</a></li>
+                                        <li><a href="operationguide.html">제1전시실</a></li>
+                                        <li><a href="operationguide.html">제2전시실</a></li>
+                                        <li><a href="operationguide.html">제3전시실</a></li>
+                                        <li><a href="operationguide.html">어린이해녀관</a></li>
+                                        <li><a href="operationguide.html">소장자료</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">교육·행사</a>
+                                    <ul class="m_list_sub">
+                                        <li><a href="education.html">교육일정</a></li>
+                                        <li><a href="education.html">교육프로그램</a></li>
+                                        <li><a href="education.html">신청확인</a></li>
+                                        <li><a href="education.html">문화행사</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">소식·참여</a>
+                                    <ul class="m_list_sub">
+                                        <li><a href="newsguide.html">새소식</a></li>
+                                        <li><a href="newsguide.html">보도자료</a></li>
+                                        <li><a href="newsguide.html">포토갤러리</a></li>
+                                        <li><a href="newsguide.html">영상갤러리</a></li>
+                                        <li><a href="newsguide.html">발간자료</a></li>
+                                        <li><a href="newsguide.html">자료수집 및 이용</a></li>
+                                        <li><a href="newsguide.html">온라인서식</a></li>
+                                        <li><a href="newsguide.html">문의게시판</a></li>
+                                        <li><a href="newsguide.html">설문조사</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">박물관소개</a>
+                                    <ul class="m_list_sub">
+                                        <li><a href="#">인사말</a></li>
+                                        <li><a href="#">연혁 및 시설안내</a></li>
+                                        <li><a href="#">조직도</a></li>
+                                        <li><a href="#">제주해녀항일운동기념탑</a></li>
+                                        <li><a href="#">찾아오시는 길</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">해녀</a>
+                                    <ul class="m_list_sub">
+                                        <li><a href="#">해녀소개</a></li>
+                                        <li><a href="#">해녀관련 통계</a></li>
+                                        <li><a href="#">제주해녀 관련 정책</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menubg">
+                        <p class="text">이용·전시</p>
+                        <div class="img"><img src="images/menubg.jpg" alt="메뉴배경"></div>
+                    </div>
+                </div>
             </div>
         </header>
         <section id="main" class="sub3">

@@ -1,0 +1,239 @@
+#main{
+    width: 100%;
+    height: 440px;
+    background-image:url(../images/submain01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#main .subbtn{
+    width: 100%;
+    height:60px;
+    background-color: #028597;
+    opacity: 0.9;
+    position: absolute;
+    bottom:0;
+}
+.subbtn ul{}
+.subbtn ul:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.subbtn ul li{
+    float: left;
+}
+.subbtn ul li .home{
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    position: relative;
+}
+.subbtn ul li .bgbox{
+    display: block;
+    width: 60px;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.3;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.subbtn ul .home img{
+    vertical-align:middle;
+}
+.subbtn ul li select{
+    width: 150px;
+    height: 60px;
+    background-color: inherit;
+    color:#fff;
+    font-size: 1.8rem;
+    border:0;
+}
+.subbtn ul li select option{
+    color:#fff;
+    background-color: #028597;
+    font-size: 1.8rem;
+    width: 100%;
+    height:200px;
+}
+
+.utilize{
+    width:100%;
+    height: 1800px;
+}
+.utilize .inner:after{
+    display: inline-block;
+    content: "";
+    clear: both;
+}
+.utilize .localmenu{
+    float: left;
+    width:25%;
+    padding-top:5px;
+}
+.utilize .localmenu>li{
+/*    position: relative;*/
+    border-bottom:1px solid #e2e2e2;
+}
+.utilize .localmenu>li:last-child{
+    border-bottom:0;
+}
+.utilize .localmenu>li>a{
+    display: block;
+    width: 95%;
+    height: 100%;
+    font-size: 1.8rem;
+    line-height: 52px;
+    padding-left:5%;
+}
+.utilize .localmenu>li>a:hover{
+    background-color: #06ad93;
+    color:#fff;
+    transition: all 0.5s;
+}
+.utilize .localmenu>li:hover{
+    border-bottom: 1px solid #00806c;
+}
+.utilize .localmenu>li:hover .localsubmenu{
+    display: block;
+    transition: all 0.5s;
+}
+.utilize .localmenu .localsubmenu{
+    display: none;
+    float: left;
+    width: 95%;
+    padding-left:10px;
+}
+.utilize .localmenu .localsubmenu>li>a{
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size:1.4rem;
+}
+.utilize .localsubmenu>li:first-child>a{
+    padding-top:15px;
+}
+.utilize .localsubmenu>li:last-child>a{
+    padding-bottom:15px;
+}
+.utilize .localmenu .localsubmenu>li>a>span{
+    display: inline-block;
+    width: 7%;
+    height: 1px;
+    margin-bottom: 5px;
+    margin-right:2%;
+    background-color: inherit;
+}
+.utilize .localmenu .localsubmenu>li:hover a>span{
+    transition: all 0.5s;
+    background-color: #06ad93;
+}
+.utilize .localmenu .localsubmenu>li>a>span.on{}
+.utilize .view{
+    float: right;
+    width: 70%;
+    padding-top:5px;
+}
+.utilize .view .textbox{
+    width: 100%;
+}
+.utilize .view .textbox>h3{
+    width: 100%;
+    font-size: 3.2rem;
+    color:#028597;
+    padding-top: 32px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #028597;
+}
+.utilize .view .textbox>p{
+    width: 88%;
+    margin-top:25px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 67px;
+}
+
+.view .time{}
+.view .time>h4{
+    font-size:2rem;
+    margin-bottom: 17px;
+}
+.view .time>ul{
+    width: 100%;
+    height: 225px;
+    border: 1px solid #f3f3f3;
+    box-sizing: border-box;
+}
+.view .time>ul>li{
+    font-size:1.4rem;
+    float:left;
+}
+.view .time>ul>li:nth-child(odd){
+    width:30%;
+    height:55px;
+    background-color: #028597;
+    color:#fff;
+    text-align: center;
+    line-height: 55px;
+    border-bottom: 1px solid #f3f3f3;
+}
+.view .time>ul>li:nth-child(even){
+    width: 68%;
+    padding-left:2%;
+    height: 55px;
+    color:#6c6c6c;
+    text-align: left;
+    line-height:55px;
+    border-bottom: 1px solid #f3f3f3;
+}
+.view .time>ul>li:nth-child(7),.view .time>ul>li:nth-child(8){
+    border-bottom: 0;
+}
+
+.view .tiket{
+    margin-top: 58px;
+}
+.view .tiket>h4{
+    font-size:2rem;
+    margin-bottom: 17px;
+}
+.view .tiket>ul{
+    width: 100%;
+    height: 112.5px;
+    border: 1px solid #f3f3f3;
+    box-sizing: border-box;
+}
+.view .tiket>ul>li{
+    font-size:1.4rem;
+    float:left;
+}
+.view .tiket>ul>li:nth-child(odd){
+    width:30%;
+    height:55px;
+    background-color: #6c6c6c;
+    color:#fff;
+    text-align: center;
+    line-height: 55px;
+    border-bottom: 1px solid #f3f3f3;
+}
+.view .tiket>ul>li:nth-child(even){
+    width: 68%;
+    padding-left:2%;
+    height: 55px;
+    color:#6c6c6c;
+    text-align: left;
+    line-height:55px;
+    border-bottom: 1px solid #f3f3f3;
+}
+.view .tiket>ul>li:nth-child(7),.view .tiket>ul>li:nth-child(8){
+    border-bottom: 0;
+}
+
+
+
+
