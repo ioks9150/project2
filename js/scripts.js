@@ -23,7 +23,7 @@ $(function () {
 //            $('#header.on .search a img').attr('src', 'images/search2.png');
 //            $('#header.on .menu a img').attr('src', 'images/menu2.png');
 //        }
-        if (scr === 0 && width_size<769) {
+        if (scr === 0 && width_size<=769) {
             $('#header').removeClass('on');
             $('#header .logo a img').attr('src', 'images/logo_blue.png');
             $('#header .search a img').attr('src', 'images/search2.png');
@@ -39,12 +39,38 @@ $(function () {
             $('#header .logo a img').attr('src', 'images/logo.png');
             $('#header .search a img').attr('src', 'images/search.png');
             $('#header .menu a img').attr('src', 'images/menu.png');
+            
+            
+            $('#header').hover(function(){
+            $('.search a img').attr('src', 'images/search2.png');
+            $('.menu a img').attr('src', 'images/menu2.png');
+            $('.logo a img').attr('src', 'images/logo_blue.png');
+            },
+                function(){
+                $('.search a img').attr('src', 'images/search.png');
+                $('.menu a img').attr('src', 'images/menu.png');
+                $('.logo a img').attr('src', 'images/logo.png');
+            });
+            
         } else {
+            $('#header').hover(function(){
+            $('.search a img').attr('src', 'images/search2.png');
+            $('.menu a img').attr('src', 'images/menu2.png');
+            $('.logo a img').attr('src', 'images/logo_blue.png');
+            },
+                function(){
+                $('.search a img').attr('src', 'images/search.png');
+                $('.menu a img').attr('src', 'images/menu.png');
+                $('.logo a img').attr('src', 'images/logo.png');
+            });
             $('#header').addClass('on');
             $('#header.on .logo a img').attr('src', 'images/logo_blue.png');
             $('#header.on .search a img').attr('src', 'images/search2.png');
             $('#header.on .menu a img').attr('src', 'images/menu2.png');
         }
+        $('#header.on .logo a img').attr('src', 'images/logo_blue.png');
+            $('#header.on .search a img').attr('src', 'images/search2.png');
+            $('#header.on .menu a img').attr('src', 'images/menu2.png');
     });
 
 
