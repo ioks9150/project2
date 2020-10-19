@@ -62,7 +62,7 @@ $(function () {
         if (width_size > 770) {
             $('.slider1 img').attr('src', 'images/main980.jpg');
             $('.slider2 img').attr('src', 'images/main2980.jpg');
-            });
+         
 
         }
 
