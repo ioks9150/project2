@@ -2211,7 +2211,9 @@ a{text-decoration: none; color:#6c6c6c;}
     
     
     
-    
+    .site .inner{
+        width: 98%;
+    }
     
     .site .btn{
         margin-left: 2%;
