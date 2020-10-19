@@ -12,7 +12,7 @@ $(function () {
         var scr = $(window).scrollTop();
         var width_size = window.outerWidth;
 
-        if (scr === 0 && width_size > 1280) {
+        if (scr === 0) {
             $('#header').removeClass('on');
             $('#header .logo a img').attr('src', 'images/logo.png');
             $('#header .search a img').attr('src', 'images/search.png');
