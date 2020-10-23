@@ -70,10 +70,10 @@ display: block;
 {
     float: right;
 }
-.slick-slide img{
+.slick-slide img
+{
     display: inline-block;
 }
-/*화살표수정수정*/
 .slick-slide.slick-loading img
 {
     display: none;
