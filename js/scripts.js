@@ -23,7 +23,7 @@ $(function () {
 //            $('#header.on .search a img').attr('src', 'images/search2.png');
 //            $('#header.on .menu a img').attr('src', 'images/menu2.png');
 //        }
-        if (scr === 0 && width_size<=769) {
+        if (scr === 0 && width_size<=1279) {
             $('#header').removeClass('on');
             $('#header .logo a img').attr('src', 'images/logo_blue.png');
             $('#header .search a img').attr('src', 'images/search2.png');
@@ -34,7 +34,7 @@ $(function () {
             $('#header.on .search a img').attr('src', 'images/search2.png');
             $('#header.on .menu a img').attr('src', 'images/menu2.png');
         }
-        if (scr === 0 && width_size>770) {
+        if (scr === 0 && width_size>1280) {
             $('#header').removeClass('on');
             $('#header .logo a img').attr('src', 'images/logo.png');
             $('#header .search a img').attr('src', 'images/search.png');
@@ -59,9 +59,9 @@ $(function () {
             $('.logo a img').attr('src', 'images/logo_blue.png');
             },
                 function(){
-                $('.search a img').attr('src', 'images/search.png');
-                $('.menu a img').attr('src', 'images/menu.png');
-                $('.logo a img').attr('src', 'images/logo.png');
+                $('.search a img').attr('src', 'images/search2.png');
+                $('.menu a img').attr('src', 'images/menu2.png');
+                $('.logo a img').attr('src', 'images/logo_blue.png');
             });
             $('#header').addClass('on');
             $('#header.on .logo a img').attr('src', 'images/logo_blue.png');

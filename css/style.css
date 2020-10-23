@@ -1387,13 +1387,24 @@ a{text-decoration: none; color:#6c6c6c;}
     float:left;
     width:32%;
     height:280px;
-    background-color: #f3f3f3;
+    background-color: #111;
     position: relative;
+}
+.databox2 .vr .box{
+    display: block;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    opacity: 0.5;
 }
 .databox2 .vr .box li a>img{
     width: 100%;
 }
-
+.databox2 .vr .box:hover{
+    opacity: 0.7;
+    transition: all 0.5s;
+}
 .databox2 .vr .vr_btn{
     position: absolute;
     bottom:10px;
@@ -2585,7 +2596,9 @@ a{text-decoration: none; color:#6c6c6c;}
     }
    
 */
-    
+        .listhidden{
+        margin-top: 0%;
+    }
     
 }
 
@@ -2607,7 +2620,7 @@ a{text-decoration: none; color:#6c6c6c;}
         top:75%;
     }
     .listhidden{
-        margin-top: 7%;
+        margin-top: 0%;
     }
 }
 
